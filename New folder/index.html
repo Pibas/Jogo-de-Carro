@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Roda Roda Jequiti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+  <h1>🚗 Roda Roda Jequiti</h1>
+  <p>Desvie dos carros e sobreviva o máximo possível</p>
+  <p id="recordText">Recorde: 0</p>
+  <button id="startBtn">▶ JOGAR</button>
+</div>
+
+<div id="gameWrapper" style="display:none;">
+  <button id="pauseBtn">⏸</button>
+  <canvas id="game" width="360" height="600"></canvas>
+
+  <div id="gameOverScreen" style="display:none;">
+  <h1>💥 GAME OVER</h1>
+  <p id="gameOverScore"></p>
+  <button id="restartBtn">REINICIAR</button>
+</div>
+
+
+  <div id="controls">
+    <button id="leftBtn" class="ctrlBtn">⬅</button>
+    <button id="rightBtn" class="ctrlBtn">➡</button>
+  </div>
+</div>
+
+<audio id="engineSound" src="engine.wav" loop></audio>
+<audio id="crashSound" src="crash.wav"></audio>
+<audio id="musicSound" src="music.wav" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
